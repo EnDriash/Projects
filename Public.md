@@ -1,1 +1,1 @@
-https://endriash.github.io/Projects/spimplePage.html
+https://endriash.github.io/Projects/SimplePage/simplePage.html
