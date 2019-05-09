@@ -1,0 +1,585 @@
+$hoverColor: rgb(52, 199, 232);
+$hoverGrey: rgba(25, 24, 22,0.6);
+
+body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-size: 20px;
+}
+p {
+    font-family: Sniglet;
+}
+h1 {
+    font-family: Merriweather;
+}
+/*GRID*/
+.row {
+    overflow: auto;
+    text-align: center;
+    margin: 0 100px;
+}
+[class*="col-"] {
+    margin: 0 auto;
+    padding: 0;
+    float: left;
+    min-height: 1px;
+}
+@media (min-width: 1200px) {
+    /* For desktop */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+/* HEADER WITH MENU NAVIGATION*/
+header {
+position: relative;
+height: 200px;
+width: 100%;
+overflow: auto;
+background-color: black;
+font-weight: bold;
+font-size: 1.5em;
+
+    .logo {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+    width: 20%;
+    
+        img {
+        width: 100%;
+        height: 200px;
+        object-fit: scale-down;
+        }
+    }
+    
+    .nav {
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    float: right;
+    
+        ul {
+        margin: 0;
+        padding: 0;
+        
+            li {
+            padding: 10px;
+            display: inline-block;
+            list-style: none;
+            float: right;
+                
+                a {
+                text-decoration: none;
+                color: white;
+                    &:hover {
+                    color: $hoverColor;
+                    text-decoration: none;
+                    cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* WELCOME SECTION HERO TYPE*/
+.hero {
+min-height: 450px;
+height: 75vh;
+width: 100%;
+background-image: url(https://images.unsplash.com/photo-1494412519320-aa613dfb7738?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+    p {
+    float: right;
+    position: relative;
+    padding: 25px;
+    margin: 0;
+    top: 20%;
+    max-width: 50%;
+    font-size: 2.5em;
+    background-color: $hoverGrey;
+    color: white;
+    font-family: Merriweather;
+    border-radius: 20px 0 0 20px;
+    }
+
+    .buttons { 
+    bottom: 100px;
+    width: 30%;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 80%;
+
+            button {
+            margin: 20px;
+            padding: 15px;
+            background: grey;
+            border-style: none;
+            border-radius: 50%;
+            &:active {
+            background: white;    
+            }
+            }
+    }
+}
+
+
+
+
+/* BENEFITS SECTION*/
+.benefits {
+margin: 5% auto;
+text-align: center;
+
+    p {
+    font-size: 1.5em;
+    }
+    
+    .col-4{
+        h1, p {
+        box-sizing: border-box;
+        padding:  0 30px;
+        }
+        
+        div {
+        margin: 0 auto;
+        background: rgb(48, 46, 46);;
+        height: 150px;
+        width: 150px;
+        border-radius: 20%;
+        }
+        
+        &:hover h1{
+        color: $hoverColor;
+        }
+    }
+    
+    .featured {
+            h1 {
+            margin: 100px 0 0 0;
+            font-size: 3em;
+            font-weight: bold;
+            }
+            p {
+            padding: 0 5%;
+            }
+    }
+    
+    .fas {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    background-color: rgb(48, 46, 46);
+        &::before {
+        color: white;
+        font-size: 4em;
+        position: relative;
+        top: 25%;   
+        }
+    }
+    
+    .fa-globe {
+    position: relative;
+    left: 30px;
+    }
+    
+    .fa-search {
+    position: relative;
+    left: -60px;
+    top: 50px;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+        &::before {
+        display: inline;
+        position: relative;
+        white-space: nowrap;
+        top: 5px;
+        left: 5px;
+        font-size: 3.5em;
+        color: white;
+        }
+    }
+    
+    .fa-cogs {
+    transform: rotate(-45deg);
+    transform-origin: center;
+    background: none;
+    }
+    
+    .first:hover .research , .center:hover .fas, .last:hover div {
+    background-color: $hoverColor;
+    }
+    
+}
+
+/* GALLERY */
+.gallery {
+margin: 100px 0;
+
+    .row {
+    margin: 0;
+    }
+    
+    .layer {
+    display: none;    
+    }
+    
+    img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;  
+    }
+    
+    [class*=col-] {
+    position: relative;   
+    
+        &:hover .layer {
+        position: absolute;
+        display: block;
+        height: 40vh;
+        width: 100%;
+        background-color: $hoverGrey;
+        transition: ease-in 0.4s;
+        
+            i {
+            position: relative;
+            top: 35%;
+            font-size: 1.25em;
+            cursor: pointer;
+            padding: 15px 40px;
+            
+                &::before {
+                color: white;
+                }
+                
+            }
+        }
+    }
+}
+
+
+/* TEAM */
+.team{
+    
+    img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+    
+    p {
+    font-size: 1.5em;
+    font-weight: bold;  
+    }
+    
+    .col-3:hover::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: $hoverGrey;
+    cursor: pointer;
+    }
+}
+
+/* PROMOTION SECTION*/
+.promotion {
+margin: 5% auto;   
+    
+    .row { 
+    overflow: hidden;
+    }
+    p {
+    margin: 0 20px;
+    font-size: 1.25em;
+    }
+    h1 {
+    margin: 10px 0;
+    font-size: 3em;
+    font-weight: bold;
+    }
+}
+
+/* STATISTICS SECTION */
+.statistics {
+ padding: 50px 0;   
+ 
+    h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 3.5em;    
+    }
+    p {
+    font-size: 1.25em;
+    color: $hoverColor;
+    font-weight: bold;
+    font-family: Merriweather;
+    }
+}
+
+
+/* FOOTER */
+footer {
+background-color: rgb(49, 51, 50);
+color: white; 
+padding: 40px 0;
+    
+    .row {
+    text-align: left;
+    font-size: 0.75em;
+    }
+    
+    h1, p {
+    margin: 25px 20px 25px 5px;
+    }
+    
+    .title h1::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    padding: 0 30px;
+    margin-left: 10px;
+    border: 2px solid;
+    }
+    
+    h1 {
+    font-size: 1.5em;  
+    font-weight: bold;
+    } 
+    
+    .col-4 .rowL2 h1 {
+    margin: 0 0;
+    line-height: 67px;
+    font-size: 1em;        
+    } 
+    
+    .icons i {
+    margin: 0 8px;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    background-color: $hoverColor;
+    cursor: pointer;
+
+        &::before {
+        position: relative;
+        top: 15%;
+        font-size: 1.25em;
+        }
+    }
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1199px) and (min-width: 768px) {
+    /* For tablets: */
+    .row {
+    margin: 0;
+    padding: 0;
+    }
+    
+    header {
+    height: auto;
+    overflow: auto;
+            
+        .logo {
+        width: 100%;
+        display: block;
+        transform:  none;
+        margin: 0 auto 5%;
+       }
+       
+       .nav {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+       
+            ul li {
+            float: none;
+            padding: 0 10px;
+            font-size: 0.75em;
+           }
+       }
+   }
+   
+   .hero p{font-size: 2em;}
+   .benefits .col-4 {margin: 5% 0;}
+   
+   .gallery{
+    display: block;
+    float: none;
+   }
+   
+   .promotion img{
+    float: none;
+    margin: 0 auto;  
+   }
+   
+  
+   .rowL2 [class*="col-"] {
+       float: none;
+       display: inline-block;
+       }
+       
+    footer{
+        .row, .icons {
+        margin: 0 15%;
+        }
+        
+        .title { 
+        text-align: center;
+            h1 { 
+            padding-left: 20px;
+                &::after { 
+                border: none;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 767px){
+    /* For mobile: */
+  .row {
+   margin: 0;
+   padding: 0;
+  }
+  
+  header { 
+  height: 90vh;
+  
+        .logo, div.nav , div.nav ul li  {
+        float: none;
+        display: block;
+        transform: none;
+        top: 0;
+        }
+       
+        .logo{
+        width: 100%;
+        height: 20vh;
+        margin: 0 auto;
+       
+            img {
+            transform: scale(1);
+           }
+       }
+       
+        div.nav  {
+        position: relative;
+        top: 10vh;
+        height: 60vh;
+       
+            ul li {
+            text-align: center;
+            margin: 2vh auto;
+            border: 2px solid white;
+            box-shadow: 2px 2px 4px white;
+            border-radius: 30px;
+            width: 75%;
+            background-color: rgb(20, 20, 53);
+            font-size: 0.5em;
+            }
+       }
+  }
+  
+   .hero p{font-size: 1.5em;}
+   .benefits .col-4 {margin: 10% 0;}
+   
+   .gallery{
+        display: block;
+        float: none;
+   }
+   
+   .promotion img{
+        width: 100%;
+        margin:0;
+        transform: scale(0.7);   
+   }
+   
+   p, h1{transform: scale(0.9);}
+  
+   
+   .rowL2 [class*="col-"] {
+       float: none;
+       display: inline-block;
+       }
+       
+    footer{
+        .title { 
+        text-align: center; 
+            h1 {   
+            padding-left: 20px;
+                &::after {
+                border: none;
+                }
+            }
+        }
+        .row, .icons {
+        margin: 0 7%;
+        }   
+    }
+    
+}
