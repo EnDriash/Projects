@@ -1,0 +1,376 @@
+[class*="col-"] {
+  float: left;
+  display: inline-block; }
+
+.row {
+  display: block;
+  margin: auto 10%;
+  overflow: auto; }
+
+.col-12 {
+  width: 100%; }
+
+.col-11 {
+  width: 91.66666667%; }
+
+.col-10 {
+  width: 83.33333333%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-8 {
+  width: 66.66666667%; }
+
+.col-7 {
+  width: 58.33333333%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-5 {
+  width: 41.66666667%; }
+
+.col-4 {
+  width: 33.33333333%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-2 {
+  width: 16.66666667%; }
+
+.col-1 {
+  width: 8.33333333%; }
+
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif; }
+  body .container .jumbotron {
+    color: white;
+    width: 100%;
+    height: 80vh;
+    background-image: url("img/jumbotron.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 450px; }
+    body .container .jumbotron header {
+      padding: 5vh 0; }
+      body .container .jumbotron header #logo img {
+        position: relative;
+        object-fit: contain; }
+      body .container .jumbotron header nav ul {
+        margin: 0;
+        float: right;
+        list-style: none; }
+        body .container .jumbotron header nav ul li {
+          display: inline-block;
+          padding: 0 2px;
+          font-weight: 600; }
+    body .container .jumbotron .content {
+      margin: 10vh auto;
+      padding: 20px;
+      text-align: center; }
+      body .container .jumbotron .content h1 {
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 2em; }
+        body .container .jumbotron .content h1 span {
+          font-weight: 700; }
+      body .container .jumbotron .content div {
+        margin: 2% 45%;
+        border-top: 1px solid #ed145b; }
+      body .container .jumbotron .content p {
+        font-size: 1.5em;
+        font-weight: 300; }
+      body .container .jumbotron .content .button {
+        background-color: #ed145b;
+        border-radius: 100px;
+        width: 10%;
+        padding: 1.5% 2.5%;
+        margin: 4% auto;
+        text-transform: uppercase;
+        font-weight: 500; }
+  body .container main .triangle {
+    width: 0;
+    height: 0;
+    border-left: 50vw #ed145b solid;
+    border-top: 2.5vh #ed145b solid;
+    border-bottom: 2.5vh #f4f4f4 solid;
+    border-right: 50vw #f4f4f4 solid; }
+  body .container main .newone {
+    background-color: #f4f4f4;
+    padding: 10vh 0;
+    margin-right: 0%;
+    position: relative; }
+    body .container main .newone::before {
+      content: "";
+      height: 25vh;
+      width: 100%;
+      position: absolute;
+      background-color: white;
+      bottom: 0; }
+    body .container main .newone .row {
+      position: relative;
+      margin-right: 0;
+      overflow: none; }
+      body .container main .newone .row .content {
+        display: block;
+        color: #5a5a5a;
+        display: inline; }
+        body .container main .newone .row .content h1 {
+          font-size: 2em; }
+        body .container main .newone .row .content .belt {
+          width: 60%;
+          margin: 5% 0;
+          border-top: 1.5px solid #ed145b; }
+        body .container main .newone .row .content .seevideo {
+          color: #ed145b; }
+          body .container main .newone .row .content .seevideo p {
+            display: inline; }
+      body .container main .newone .row .img {
+        position: relative; }
+        body .container main .newone .row .img img {
+          width: 100%; }
+  body .container main .services {
+    text-align: center;
+    padding: 10% auto;
+    min-height: 450px;
+    background-color: white; }
+    body .container main .services .belt {
+      width: 20%;
+      margin: 5% auto;
+      border-top: 1.5px solid #ed145b; }
+    body .container main .services .icons [class^="icon-"] {
+      text-align: center;
+      margin: 7% auto 15%; }
+      body .container main .services .icons [class^="icon-"] div {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        border: 1px solid grey;
+        border-radius: 50%; }
+        body .container main .services .icons [class^="icon-"] div img {
+          position: relative;
+          top: 20%; }
+  body .container main .heroquats {
+    background-image: url("img/jumbotron.png");
+    height: 50vh;
+    min-height: 450px;
+    color: white;
+    text-align: center;
+    margin: 0; }
+    body .container main .heroquats .content {
+      position: relative;
+      top: 3vh; }
+      body .container main .heroquats .content p {
+        margin: auto 20%;
+        font-size: 1.3em; }
+      body .container main .heroquats .content .quate {
+        margin: 0;
+        font-size: 8em;
+        font-weight: bold;
+        color: #ed145b; }
+      body .container main .heroquats .content .turn {
+        transform: rotate(180deg); }
+    body .container main .heroquats [class^="fas"] {
+      font-size: 5em;
+      position: relative;
+      top: 25vh; }
+  body .container main .prices {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 5% 0;
+    font-family: 'Lato', sans-serif; }
+    body .container main .prices h1 {
+      font-style: italic;
+      font-weight: 300;
+      font-size: 3em; }
+    body .container main .prices .belt {
+      width: 20%;
+      margin: 5% auto;
+      border-top: 1.5px solid #ed145b; }
+    body .container main .prices p {
+      margin: 5% 20%; }
+    body .container main .prices .offerts {
+      font-family: 'Maven Pro', sans-serif;
+      margin: 5% inherit; }
+      body .container main .prices .offerts [class^="offert-"] {
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0 2.5%;
+        margin: 0;
+        font-size: 0.8em; }
+        body .container main .prices .offerts [class^="offert-"] .topsec {
+          color: white;
+          padding: 5% 0 20%;
+          height: 35%;
+          background-color: #5a5a5a;
+          position: relative; }
+          body .container main .prices .offerts [class^="offert-"] .topsec div p {
+            margin: auto 10%;
+            font-size: 1em; }
+          body .container main .prices .offerts [class^="offert-"] .topsec div #dollarstring {
+            margin: 0;
+            font-weight: bold;
+            font-size: 1.5em; }
+            body .container main .prices .offerts [class^="offert-"] .topsec div #dollarstring span {
+              font-size: 2em; }
+          body .container main .prices .offerts [class^="offert-"] .topsec .package {
+            height: 20%;
+            position: absolute;
+            top: 85%;
+            left: 10%;
+            color: gray;
+            width: 80%;
+            border-radius: 50px;
+            height: 30%;
+            background-color: #f4f4f4; }
+            body .container main .prices .offerts [class^="offert-"] .topsec .package p {
+              font-weight: 600;
+              margin: 5% 0; }
+        body .container main .prices .offerts [class^="offert-"] .bottomsec {
+          height: 65%;
+          background-color: white;
+          padding: 15% 0; }
+          body .container main .prices .offerts [class^="offert-"] .bottomsec ul {
+            margin: 0;
+            list-style: none;
+            padding: 5% 0; }
+            body .container main .prices .offerts [class^="offert-"] .bottomsec ul li {
+              font-size: 0.8em;
+              padding: 5% 0; }
+          body .container main .prices .offerts [class^="offert-"] .bottomsec button {
+            margin-bottom: 0%;
+            padding: 5%;
+            font-size: 1em;
+            width: 80%;
+            color: white;
+            border-style: none;
+            border-radius: 50px;
+            background-color: #ed145b; }
+  body .container main .benefits {
+    padding: 5% 0;
+    background-color: white; }
+    body .container main .benefits [class^="benefit-"] {
+      box-sizing: border-box;
+      padding: 2.5%; }
+      body .container main .benefits [class^="benefit-"] h3 {
+        color: #ed145b; }
+      body .container main .benefits [class^="benefit-"] p {
+        color: grey;
+        font-family: "Lato", sans-serif;
+        font-style: italic; }
+  body .container main .joincomunity {
+    background-color: #ed145b;
+    padding: 5vh 0;
+    font-weight: 300; }
+    body .container main .joincomunity p {
+      font-size: 2.5em;
+      color: white;
+      text-align: center; }
+    body .container main .joincomunity .button {
+      border-radius: 50vh;
+      background-color: white;
+      width: 100%;
+      margin: 20% 0; }
+      body .container main .joincomunity .button p {
+        padding: 5% 10%;
+        color: #ed145b;
+        font-size: 1.5em;
+        font-weight: 600; }
+  body .container main .gallery {
+    padding: 5% 0;
+    background-color: white; }
+    body .container main .gallery .header {
+      text-align: center; }
+      body .container main .gallery .header h1 {
+        font-size: 2.5em; }
+      body .container main .gallery .header .belt {
+        width: 20%;
+        margin: 5% auto;
+        border-top: 1.5px solid #ed145b; }
+    body .container main .gallery [class^="update-"] {
+      box-sizing: border-box;
+      padding: 2.5%;
+      color: grey; }
+      body .container main .gallery [class^="update-"] img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill; }
+      body .container main .gallery [class^="update-"] .content {
+        background-color: #f4f4f4;
+        padding: 5%;
+        margin: 0; }
+    body .container main .gallery .showmore {
+      text-align: center;
+      color: #ed145b;
+      font-size: 1.5em; }
+  body .container main .hero-2 {
+    color: white;
+    width: 100%;
+    background-image: url("img/jumbotron.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 450px; }
+    body .container main .hero-2 .content {
+      text-align: center;
+      position: relative;
+      padding: 5% 25%; }
+      body .container main .hero-2 .content .belt {
+        width: 20%;
+        margin: 4% auto;
+        border-top: 1.5px solid #ed145b; }
+      body .container main .hero-2 .content .button {
+        background-color: #ed145b;
+        border-radius: 100px;
+        margin: 5% auto;
+        width: 15%;
+        padding: 2.5% 5%;
+        text-transform: uppercase;
+        font-weight: 400; }
+  body .container main .downloadsec {
+    background-color: #f4f4f4; }
+    body .container main .downloadsec .row {
+      margin-left: 5%;
+      padding: 5% 0; }
+      body .container main .downloadsec .row img {
+        width: 100%; }
+      body .container main .downloadsec .row .content {
+        box-sizing: border-box;
+        padding: 5% 0 5% 5%;
+        font-family: "Lato", sans-serif;
+        color: #5a5a5a; }
+        body .container main .downloadsec .row .content h1 {
+          font-size: 2em;
+          font-weight: 300; }
+        body .container main .downloadsec .row .content .belt {
+          display: block;
+          width: 60%;
+          margin: 10% 0;
+          border-top: 1.5px solid #ed145b; }
+        body .container main .downloadsec .row .content p {
+          display: block;
+          font-weight: 300; }
+        body .container main .downloadsec .row .content .button {
+          text-align: center;
+          background-color: #ed145b;
+          color: white;
+          border-radius: 100px;
+          margin: 10% 0;
+          width: 35%;
+          padding: 4% 8%;
+          font-weight: 500; }
+  body .container footer {
+    padding: 5vh 0; }
+    body .container footer #copyright {
+      display: inline-block; }
+    body .container footer #designed {
+      float: right; }
+      body .container footer #designed span {
+        color: #ed145b; }
+
+/*# sourceMappingURL=simplepage2.css.map */
