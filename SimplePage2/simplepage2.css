@@ -365,7 +365,9 @@ body {
           padding: 4% 8%;
           font-weight: 500; }
   body .container footer {
-    padding: 5vh 0; }
+    padding: 5vh 0;
+    background-color: #2b2b2b;
+    color: white; }
     body .container footer #copyright {
       display: inline-block; }
     body .container footer #designed {

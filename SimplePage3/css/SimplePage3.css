@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+body p {
+  font-family: 'Roboto Slab', serif;
+  color: #cecece;
+}
+
+body h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+body .jumbotron {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../images/hero.png");
+  background-size: fill;
+  background-position: center;
+  position: relative;
+  min-height: 450px;
+}
+
+body .jumbotron header #logo img {
+  position: relative;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .jumbotron header nav {
+  float: right;
+}
+
+body .jumbotron header nav ul {
+  margin: 0 auto;
+  list-style: none;
+}
+
+body .jumbotron header nav ul li {
+  color: white;
+  display: inline-block;
+  padding: 0 1vw;
+  font-weight: 600;
+}
+
+body .jumbotron .content {
+  text-align: center;
+}
+
+body .jumbotron .content h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+body .jumbotron .content p {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-size: 3em;
+  color: white;
+}
+
+body .jumbotron .content .button {
+  color: white;
+  background-color: #fed136;
+  width: 10%;
+  padding: 1.5% 2.5%;
+  margin: 4% auto;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+/*# sourceMappingURL=SimplePage3.css.map */
