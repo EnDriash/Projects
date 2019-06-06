@@ -86,7 +86,7 @@
   width: 100%;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 767px) {
 .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -146,7 +146,7 @@
     width: 100%;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md {
     flex-basis: 0;
     flex-grow: 1;
@@ -206,7 +206,7 @@
     width: 100%;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
    .col-lg {
     flex-basis: 0;
     flex-grow: 1;

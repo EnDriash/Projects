@@ -31,6 +31,7 @@ body i {
 
 body i:hover {
   transform: scale(1.2);
+  cursor: pointer;
 }
 
 body .services, body .aboutus, body .sponsors, body footer {
@@ -50,13 +51,38 @@ body .jumbotron {
   background-size: fill;
   background-position: center;
   position: relative;
-  min-height: 450px;
+  min-height: 500px;
 }
 
 body .jumbotron header #logo img {
   position: relative;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+body .jumbotron header .hamburger {
+  display: none;
+  width: 15vw;
+  height: 20vw;
+  float: right;
+  cursor: pointer;
+}
+
+body .jumbotron header .hamburger:hover span {
+  opacity: 1;
+  box-shadow: 1px 1px;
+  transform: scale(1.2);
+}
+
+body .jumbotron header .hamburger span {
+  display: block;
+  border-top: 4px #fed136 solid;
+  border-bottom: 4px #fed136 solid;
+  box-shadow: 1px 1px 5px;
+  opacity: 0.7;
+  border-radius: 10px;
+  margin: 15% 0;
+  width: 80%;
 }
 
 body .jumbotron header nav ul {
@@ -72,6 +98,10 @@ body .jumbotron header nav ul li {
   font-weight: 600;
 }
 
+body .jumbotron header nav ul li:hover {
+  color: #fed136;
+}
+
 body .jumbotron .content {
   text-align: center;
 }
@@ -85,6 +115,7 @@ body .jumbotron .content p {
   font-family: 'Cardo', serif;
   font-style: italic;
   font-weight: 400;
+  margin: 0;
   color: white;
   font-size: 3em;
 }
@@ -92,13 +123,13 @@ body .jumbotron .content p {
 body .jumbotron .content .button {
   color: white;
   background-color: #fed136;
-  width: 10%;
+  width: 10vw;
   padding: 1.5% 2.5%;
   margin: 4% auto;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border-radius: 2px;
   transition: 0.1s linear;
 }
@@ -107,6 +138,7 @@ body .jumbotron .content .button:hover {
   text-shadow: 1px 1px;
   border: 2px #fed136 solid;
   box-shadow: 2px 2px 2px #fed136;
+  cursor: pointer;
 }
 
 body .services h1 + p {
@@ -119,8 +151,8 @@ body .services h1 + p {
 body .services [class^="col-"] i {
   border-radius: 50%;
   border: 2px #fed136 solid;
-  width: 5vw;
-  height: 5vw;
+  width: 80px;
+  height: 80px;
 }
 
 body .services [class^="col-"] i::before {
@@ -133,12 +165,13 @@ body .services [class^="col-"] i::before {
 body .portfolio img {
   width: 100%;
   height: 30vh;
+  min-height: 200px;
   -o-object-fit: fill;
      object-fit: fill;
 }
 
 body .portfolio .content {
-  padding: 5%;
+  padding: 2.5%;
   background-color: white;
 }
 
@@ -219,8 +252,8 @@ body .team .img img {
 body .team i {
   border-radius: 50%;
   border: 2px black solid;
-  width: 2.5vw;
-  height: 2.5vw;
+  width: 40px;
+  height: 40px;
 }
 
 body .team i::before {
@@ -276,25 +309,24 @@ body .contact form textarea {
   box-sizing: border-box;
   display: block;
   margin: 5% 0;
-  padding: 5%;
+  padding: 2.5%;
   border-radius: 10px;
 }
 
 body .contact .button {
   color: white;
   background-color: #fed136;
-  width: 10%;
+  width: 10vw;
   padding: 1.5% 2.5%;
   margin: 4% auto;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border-radius: 2px;
   transition: 0.1s linear;
-  width: 20%;
+  width: 20vw;
   display: block;
-  font-size: 1.5em;
   margin: 0 auto;
 }
 
@@ -302,6 +334,7 @@ body .contact .button:hover {
   text-shadow: 1px 1px;
   border: 2px #fed136 solid;
   box-shadow: 2px 2px 2px #fed136;
+  cursor: pointer;
 }
 
 body footer {
@@ -322,8 +355,8 @@ body footer div i {
   display: block;
   border-radius: 50%;
   background-color: black;
-  width: 2vw;
-  height: 2vw;
+  width: 40px;
+  height: 40px;
 }
 
 body footer div i::before {

@@ -1,0 +1,82 @@
+
+@media  (max-width: 767px) { // sm
+    body{
+        p, h1 ,h3{
+            transform: scale(0.8);
+        }
+        .jumbotron .content .button, .contact .button{
+            width: 30vw;
+        }
+        .jumbotron header{
+            .hamburger{
+                display: inline-block;
+            }
+            nav {
+                display: none;
+            }
+        }
+        .specrow{ 
+            margin: 0 5%;
+        }
+        .portfolio{
+            .specrow{ 
+                margin: 0 10%;
+            }
+            
+        }
+        .aboutus{
+            .row{
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+
+                    &::before{
+                        display: none;
+                    }
+                .content{
+                   justify-content: center;
+                   text-align: center;
+                   order: 2;
+                }
+                [class^="img-"]{
+                    justify-content: center;
+                    position: static;
+                    z-index: auto;
+                    display: flex;
+                    order: 1;
+                }
+                
+                .empty{
+                    display: none;
+                }
+        }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) { //md
+    body{
+            .specrow{ 
+            margin: 0;
+        }
+        .aboutus{
+            .row{
+                &::before{
+                    display: none;
+                }
+
+                [class^="img-"]{
+                    position: static;
+                    left: auto;
+                }
+                .empty{
+                    display: none;
+                }
+        }
+        }
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) { //lg
+    .specrow{ 
+        margin: auto 5%;
+    }
+}

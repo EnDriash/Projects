@@ -5,27 +5,28 @@
 	<title>Golden</title>
 	<link href="https://fonts.googleapis.com/css?family=Cardo:400i|Montserrat:400,700,900|Roboto+Slab&display=swap" rel="stylesheet">
 	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'>
-	
 	<link href="css/grid.css" rel="stylesheet" type="text/css">
 	<link href="css/simplepage3.css" rel="stylesheet" type="text/css">
-	
+	<link href="css/mediaqueries.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="container">
 
 		<div class="jumbotron">
 				<header class="specrow">
-					<div class="col-2" id="logo">
+					<div class="col-2 col-xl-2" id="logo">
 						<img src="images/logo.png" />
 					</div>
-					
-					<nav class="col-10">
+					<div class="hamburger">
+						<span></span><span></span><span></span>
+					</div>
+					<nav class="col-10 col-xl-10">
 						<ul>
-							<li>Home</li>
-							<li>Services</li>
-							<li>Portfolio</li>
-							<li>About</li>
-							<li>Contact</li>
+							<a href=""><li>Home</li></a>
+							<a href=""><li>Services</li></a>
+							<a href=""><li>Portfolio</li></a>
+							<a href=""><li>About</li></a>
+							<a href=""><li>Contact</li></a>
 						</ul>
 					</nav>
 				</header>
@@ -41,7 +42,7 @@
 			<div class="specrow">
 				<h1>SERVICES</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				<div class="col-4">
+				<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 						<i class='fas fa-shopping-basket'></i>
 						<h3>E-Commerce</h3>
 						<p>
@@ -49,7 +50,7 @@
 							luctus imperdiet sapien sollicitudin. Curabitur aliquet suscipit cursus. Etiam at feugiat mi, eu fringilla lacus.
 						</p>						
 				</div>
-				<div class="col-4">
+				<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 						<i class='fas fa-laptop'></i>
 						<h3>Responsive Web</h3>
 						<p>
@@ -57,7 +58,7 @@
 							luctus imperdiet sapien sollicitudin. Curabitur aliquet suscipit cursus. Etiam at feugiat mi, eu fringilla lacus.
 						</p>						
 				</div>
-				<div class="col-4">
+				<div class="col-4 col-xl-4 col-md-12 col-sm-12">
 						<i class='fas fa-lock'></i>
 						<h3>Web Seciurity</h3>
 						<p>
@@ -71,7 +72,7 @@
 			<div class="specrow">
 					<h1>OUR PORTFOLIO</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 							<div>
 								<img src="images/ourportfolio/1.png" />
 							</div>
@@ -80,7 +81,7 @@
 								<p>Branding</p>
 							</div>						
 					</div>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 							<div>
 								<img src="images/ourportfolio/2.png" />
 							</div>
@@ -89,7 +90,7 @@
 								<p>Print Design</p>
 							</div>						
 					</div>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 							<div>
 								<img src="images/ourportfolio/3.png" />
 							</div>
@@ -98,7 +99,7 @@
 								<p>Print Design</p>
 							</div>						
 					</div>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 							<div>
 								<img src="images/ourportfolio/4.png" />
 							</div>
@@ -107,7 +108,7 @@
 								<p>Product Mock-Up</p>
 							</div>						
 					</div>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 							<div>
 								<img src="images/ourportfolio/5.png" />
 							</div>
@@ -116,7 +117,7 @@
 								<p>Web Design</p>
 							</div>						
 					</div>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 							<div>
 								<img src="images/ourportfolio/6.png" />
 							</div>
@@ -133,7 +134,7 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<div class="specrow">
 				<div class="row">
-					<div class="left content col-4">
+					<div class="left content col-4 col-xl-4 col-md-7 col-sm-12">
 						<h3>JULY 2010<br>Our Humble Beginnings</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -142,7 +143,7 @@
 							eu fringilla lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 						</p>
 					</div>
-					<div class="img-1 col-4">
+					<div class="img-1 col-4 col-xl-4 col-md-5 col-sm-12">
 						<img src="images/aboutus/1.png"/>
 					</div>
 					<div class="empty col-4"></div>
@@ -150,10 +151,10 @@
 
 				<div class="row">
 					<div class="empty col-4"></div>
-					<div class="img-2 col-4">
-							<img src="images/aboutus/2.png"/>
+					<div class="img-2 col-4 col-xl-4 col-md-5 col-sm-12">
+						<img src="images/aboutus/2.png"/>
 					</div>
-					<div class="right content col-4">
+					<div class="right content col-4 col-xl-4 col-md-7 col-sm-12">
 						<h3>JULY 2010<br>Our Humble Beginnings</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -165,7 +166,7 @@
 				</div>
 				
 				<div class="row">
-					<div class="left content col-4">
+					<div class="left content col-4 col-xl-4 col-md-7 col-sm-12">
 						<h3>JULY 2010<br>Our Humble Beginnings</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -174,18 +175,18 @@
 							eu fringilla lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 						</p>
 					</div>
-					<div class="img-3 col-4">
+					<div class="img-3 col-4 col-xl-4 col-md-5 col-sm-12">
 						<img src="images/aboutus/3.png"/>
 					</div>
-					<div class="empty col-4"></div>
+					<div class="empty col-4 col-xl-4"></div>
 				</div>
 
 				<div class="row">
 					<div class="empty col-4"></div>
-					<div class="img-4 col-4">
-							<img src="images/aboutus/4.png"/>
+					<div class="img-4 col-4 col-xl-4 col-md-5 col-sm-12">
+						<img src="images/aboutus/4.png"/>
 					</div>
-					<div class="right content col-4">
+					<div class="right content col-4 col-xl-4 col-md-7 col-sm-12">
 						<h3>JULY 2010<br>Our Humble Beginnings</h3>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -208,7 +209,7 @@
 			<h1>OUR AMAZING TEAM</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<div class="specrow">
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 						<div class="img">
 							<img src="" />
 						</div>
@@ -221,7 +222,7 @@
 								
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-6 col-sm-12">
 						<div class="img">
 							<img src="" />
 						</div>
@@ -233,7 +234,7 @@
 								<i class="fab fa-google-plus-g"></i>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-4 col-xl-4 col-md-12 col-sm-12">
 						<div class="img">
 							<img src="" />
 						</div>
@@ -250,16 +251,16 @@
 
 		<div class="sponsors">
 			<div class="specrow">
-				<div class="col-3">
+				<div class="col-3 col-xl-3 col-md-6 col-sm-6">
 					<img src="images/sponsors/Envato.png" />
 				</div>
-				<div class="col-3">
+				<div class="col-3 col-xl-4 col-md-6 col-sm-6">
 					<img src="images/sponsors/WordPress.png" />
 				</div>
-				<div class="col-3">
+				<div class="col-3 col-xl-3 col-md-6 col-sm-6">
 					<img src="images/sponsors/Tuts+.png" />
 				</div>
-				<div class="col-3">
+				<div class="col-3 col-xl-3 col-md-6 col-sm-6">
 					<img src="images/sponsors/Microlancer.png" />
 				</div>
 			</div>
@@ -269,14 +270,14 @@
 			<h1>CONTACT US</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 			<div class="specrow">
-				<div class="col-6">
+				<div class="col-6 col-xl-6 col-md-12 col-sm-12">
 					<form>
 						<input type="text" placeholder="YOUR NAME*" required />
 						<input type="email" placeholder="YOUR e-mail*" required />
 						<input type="" placeholder="SUBJECT" />
 					</form>
 				</div>
-				<div class="col-6">
+				<div class="col-6 col-xl-6 col-md-12 col-sm-12">
 					<form>
 						<textarea placeholder="YOUR MESSAGE*" maxlength="2000" required ></textarea>
 					</form>
@@ -285,11 +286,11 @@
 			<div class="button">SEND MESSAGE</div>
 		</div>
 	</main>
-		
+	
     <footer>
         <div class="specrow">
             <p id="copyright">@COPYRIGHT BY JĘDRZEJ SIEWIERSKI-KRAWCZYK</p>
-            <div class="icons">
+            <div class="icons col-sm-12">
 				<i class='fab fa-twitter'></i>
 				<i class='fab fa-facebook-f'></i>
 				<i class='fab fa-pinterest-p'></i>

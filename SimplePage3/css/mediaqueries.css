@@ -1,0 +1,73 @@
+@media (max-width: 767px) {
+  body p, body h1, body h3 {
+    transform: scale(0.8);
+  }
+  body .jumbotron .content .button, body .contact .button {
+    width: 30vw;
+  }
+  body .jumbotron header .hamburger {
+    display: inline-block;
+  }
+  body .jumbotron header nav {
+    display: none;
+  }
+  body .specrow {
+    margin: 0 5%;
+  }
+  body .portfolio .specrow {
+    margin: 0 10%;
+  }
+  body .aboutus .row {
+    text-align: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  body .aboutus .row::before {
+    display: none;
+  }
+  body .aboutus .row .content {
+    -ms-flex-pack: center;
+        justify-content: center;
+    text-align: center;
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  body .aboutus .row [class^="img-"] {
+    -ms-flex-pack: center;
+        justify-content: center;
+    position: static;
+    z-index: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-order: 1;
+        order: 1;
+  }
+  body .aboutus .row .empty {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  body .specrow {
+    margin: 0;
+  }
+  body .aboutus .row::before {
+    display: none;
+  }
+  body .aboutus .row [class^="img-"] {
+    position: static;
+    left: auto;
+  }
+  body .aboutus .row .empty {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .specrow {
+    margin: auto 5%;
+  }
+}
+/*# sourceMappingURL=mediaqueries.css.map */
