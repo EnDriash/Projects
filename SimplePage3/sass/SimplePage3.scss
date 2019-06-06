@@ -1,14 +1,65 @@
 $maincolor: rgb(254,209,54);
+
+@mixin button{
+    color: white;
+    background-color: $maincolor;
+    width: 10%;
+    padding: 1.5% 2.5%;
+    margin: 4% auto;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 2px;
+    transition: 0.1s linear;
+        &:hover{
+            text-shadow: 1px 1px;
+            border: 2px $maincolor solid;
+            box-shadow: 2px 2px 2px $maincolor;
+        }
+}
+@mixin cardo{
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
 body{
     margin: 0;
     text-align: center;
-p{
-    font-family: 'Roboto Slab', serif;
-    color: rgb(206,206,206);
+    p{
+        font-family: 'Roboto Slab', serif;
+        color: rgb(106,106,106);
+        font-size: 1.2em;
+    }
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-weight: 600;
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    h3{
+        color: black;
+        font-size: 1.5em; 
+        margin-bottom: 0;
+    }
+    i{
+        transition: 0.1s linear;
+        margin: 2%;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+
+.services, .aboutus, .sponsors, footer{
+    padding: 5% 0;
+    background-color: white;
 }
-h1{
-    font-family: 'Montserrat', sans-serif;
-    color: black;
+.portfolio, .team{
+    padding: 5% 0;
+    background-color: rgb(247,247,247);
 }
 
 .jumbotron{
@@ -27,8 +78,8 @@ h1{
                 }
             }
             nav{
-                float: right;
                 ul{
+                    float: right;
                     margin: 0 auto;
                     list-style: none;
                     li{
@@ -44,28 +95,209 @@ h1{
             text-align: center;
             h1{
                 color:white;
-                text-transform: uppercase;
                 font-size: 4em;
-                font-weight: 900;
             }
             p{
-                font-family: 'Cardo', serif;
-                font-style: italic;
-                font-size: 3em;
-                color:white;
+               @include cardo;
+               color: white;
+               font-size: 3em;
             }
 
             .button{
-                color: white;
-                background-color: $maincolor;
-                width: 10%;
-                padding: 1.5% 2.5%;
-                margin: 4% auto;
-                text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
-                font-weight: bold;
-                font-size: 1.2em;
+                @include button;
             }
         }
+    }
+.services{
+    h1 + p{
+        @include cardo;
+        font-size: 1.5em;
+    }
+       
+    [class^="col-"]{
+        i{
+            border-radius: 50%;
+            border: 2px $maincolor solid;
+            width: 5vw;
+            height: 5vw;
+            &::before{
+                color: $maincolor;
+                font-size: 2.5em;
+                position: relative;
+                top:25%;
+            }
+        }
+        
+    }
+    }
+.portfolio{
+    img{
+        width: 100%;
+        height: 30vh;
+        object-fit: fill;
+    }
+    .content{
+        padding: 5%;
+        background-color: white;
+    }
+    }
+.aboutus{
+    .specrow{
+        padding: 5% 0;
+    }
+    .row{
+    position: relative;
+
+    &::before{
+            content: "";
+            position: absolute;
+            margin: 0 auto;
+            height: 100%;
+            border-left: 2px solid rgb(247,247,247);
+            z-index: 1;
+            left: 50%;
+            top: 0;
+        }
+    
+    [class^="img-"]{
+        position: absolute;
+        left: 33.3%;
+        z-index: 2;
+        padding: 0;
+        img{
+            height: 100%;
+            left: 50%;
+        }
+    }
+    }
+    .left{
+        float: left;
+        text-align: right;
+        padding: 0;
+    }
+    .right{
+        float:right;
+        text-align:left;
+        padding: 0;
+    }
+    .last{
+        .continues{
+            position: relative;
+            margin: 0 auto;
+            z-index: 2;
+            height: 170px;
+            width: 170px;
+            border-radius: 50%;
+            border: 10px rgb(247,247,247) solid;
+            background-color: $maincolor;
+            p{
+            color: white;
+            font-size: 1.5em; 
+            }
+        }
+    }
+    }
+.team{
+    h3{
+        font-size: 1.5em;
+    }
+    .img{
+        min-height: 40vh;
+        border-radius: 100vw;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    i{
+        border-radius: 50%;
+        border: 2px black solid;
+        width: 2.5vw;
+        height: 2.5vw;
+        &::before{
+            color: black;
+            font-size: 1.5em;
+            position: relative;
+            top: 25%;
+        }
+    }
+}
+.sponsors{
+padding: 0;
+
+}
+.contact{
+    padding: 5% 0;
+    background-color: black;
+    background-image: url("../images/map.png");
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-position: right bottom;
+    &::before{
+    }
+    h1{
+        color: white;
+    }
+    p{
+        @include cardo;
+        color: rgb(247,247,247);
+        font-size: 1.5em;
+    }
+    form{
+        height: 40vh;
+        
+        input{
+            box-sizing: border-box;
+            width: 100%;
+            margin: 5% 0;
+            padding: 5%;
+            border-radius: 10px;
+            display: block;
+        }
+    
+        textarea{
+            width: 100%;
+            height: 80%;
+            object-fit: fill;
+            box-sizing: border-box;
+            display: block;
+            margin: 5% 0;
+            padding: 5%;
+            border-radius: 10px;
+        }
+    }
+    .button{
+        @include button;
+        width: 20%;
+        display: block;
+        font-size: 1.5em;
+        margin: 0 auto;
+    }
+
+}
+footer{
+    padding: 2%;
+    p{
+        display: inline-block;
+        float:left;
+        font-size: 1em;
+    }
+    
+    div{
+        display: block;
+        i{
+            display: block;
+            border-radius: 50%;
+            background-color: black;
+            width: 2vw;
+            height: 2vw;
+            &::before{
+                position: relative;
+                top: 20%;
+                font-size: 1.5em;
+                color:white;
+            }
+        }
+    }
 }
 }

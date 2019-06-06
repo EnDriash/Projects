@@ -5,12 +5,42 @@ body {
 
 body p {
   font-family: 'Roboto Slab', serif;
-  color: #cecece;
+  color: #6a6a6a;
+  font-size: 1.2em;
 }
 
 body h1 {
   font-family: 'Montserrat', sans-serif;
   color: black;
+  font-weight: 600;
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+body h3 {
+  color: black;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+
+body i {
+  transition: 0.1s linear;
+  margin: 2%;
+}
+
+body i:hover {
+  transform: scale(1.2);
+}
+
+body .services, body .aboutus, body .sponsors, body footer {
+  padding: 5% 0;
+  background-color: white;
+}
+
+body .portfolio, body .team {
+  padding: 5% 0;
+  background-color: #f7f7f7;
 }
 
 body .jumbotron {
@@ -29,11 +59,8 @@ body .jumbotron header #logo img {
      object-fit: contain;
 }
 
-body .jumbotron header nav {
-  float: right;
-}
-
 body .jumbotron header nav ul {
+  float: right;
   margin: 0 auto;
   list-style: none;
 }
@@ -51,16 +78,15 @@ body .jumbotron .content {
 
 body .jumbotron .content h1 {
   color: white;
-  text-transform: uppercase;
   font-size: 4em;
-  font-weight: 900;
 }
 
 body .jumbotron .content p {
   font-family: 'Cardo', serif;
   font-style: italic;
-  font-size: 3em;
+  font-weight: 400;
   color: white;
+  font-size: 3em;
 }
 
 body .jumbotron .content .button {
@@ -73,5 +99,237 @@ body .jumbotron .content .button {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 1.2em;
+  border-radius: 2px;
+  transition: 0.1s linear;
+}
+
+body .jumbotron .content .button:hover {
+  text-shadow: 1px 1px;
+  border: 2px #fed136 solid;
+  box-shadow: 2px 2px 2px #fed136;
+}
+
+body .services h1 + p {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+body .services [class^="col-"] i {
+  border-radius: 50%;
+  border: 2px #fed136 solid;
+  width: 5vw;
+  height: 5vw;
+}
+
+body .services [class^="col-"] i::before {
+  color: #fed136;
+  font-size: 2.5em;
+  position: relative;
+  top: 25%;
+}
+
+body .portfolio img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+body .portfolio .content {
+  padding: 5%;
+  background-color: white;
+}
+
+body .aboutus .specrow {
+  padding: 5% 0;
+}
+
+body .aboutus .row {
+  position: relative;
+}
+
+body .aboutus .row::before {
+  content: "";
+  position: absolute;
+  margin: 0 auto;
+  height: 100%;
+  border-left: 2px solid #f7f7f7;
+  z-index: 1;
+  left: 50%;
+  top: 0;
+}
+
+body .aboutus .row [class^="img-"] {
+  position: absolute;
+  left: 33.3%;
+  z-index: 2;
+  padding: 0;
+}
+
+body .aboutus .row [class^="img-"] img {
+  height: 100%;
+  left: 50%;
+}
+
+body .aboutus .left {
+  float: left;
+  text-align: right;
+  padding: 0;
+}
+
+body .aboutus .right {
+  float: right;
+  text-align: left;
+  padding: 0;
+}
+
+body .aboutus .last .continues {
+  position: relative;
+  margin: 0 auto;
+  z-index: 2;
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  border: 10px #f7f7f7 solid;
+  background-color: #fed136;
+}
+
+body .aboutus .last .continues p {
+  color: white;
+  font-size: 1.5em;
+}
+
+body .team h3 {
+  font-size: 1.5em;
+}
+
+body .team .img {
+  min-height: 40vh;
+  border-radius: 100vw;
+}
+
+body .team .img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .team i {
+  border-radius: 50%;
+  border: 2px black solid;
+  width: 2.5vw;
+  height: 2.5vw;
+}
+
+body .team i::before {
+  color: black;
+  font-size: 1.5em;
+  position: relative;
+  top: 25%;
+}
+
+body .sponsors {
+  padding: 0;
+}
+
+body .contact {
+  padding: 5% 0;
+  background-color: black;
+  background-image: url("../images/map.png");
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: right bottom;
+}
+
+body .contact h1 {
+  color: white;
+}
+
+body .contact p {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: #f7f7f7;
+  font-size: 1.5em;
+}
+
+body .contact form {
+  height: 40vh;
+}
+
+body .contact form input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 5% 0;
+  padding: 5%;
+  border-radius: 10px;
+  display: block;
+}
+
+body .contact form textarea {
+  width: 100%;
+  height: 80%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  box-sizing: border-box;
+  display: block;
+  margin: 5% 0;
+  padding: 5%;
+  border-radius: 10px;
+}
+
+body .contact .button {
+  color: white;
+  background-color: #fed136;
+  width: 10%;
+  padding: 1.5% 2.5%;
+  margin: 4% auto;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 2px;
+  transition: 0.1s linear;
+  width: 20%;
+  display: block;
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+body .contact .button:hover {
+  text-shadow: 1px 1px;
+  border: 2px #fed136 solid;
+  box-shadow: 2px 2px 2px #fed136;
+}
+
+body footer {
+  padding: 2%;
+}
+
+body footer p {
+  display: inline-block;
+  float: left;
+  font-size: 1em;
+}
+
+body footer div {
+  display: block;
+}
+
+body footer div i {
+  display: block;
+  border-radius: 50%;
+  background-color: black;
+  width: 2vw;
+  height: 2vw;
+}
+
+body footer div i::before {
+  position: relative;
+  top: 20%;
+  font-size: 1.5em;
+  color: white;
 }
 /*# sourceMappingURL=SimplePage3.css.map */

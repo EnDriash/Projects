@@ -2,12 +2,17 @@
   float: left;
   display: inline-block;
   box-sizing: border-box;
-  padding: 5% 2.5%;
+  padding: 2.5%;
 }
 
 .row {
   display: block;
-  margin: auto 10%;
+  overflow: auto;
+}
+
+.specrow {
+  display: block;
+  margin: auto 15%;
   overflow: auto;
 }
 
