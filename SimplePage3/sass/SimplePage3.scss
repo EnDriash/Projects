@@ -253,7 +253,11 @@ body{
     }
 }
 .sponsors{
-    
+    [class^="img-"]{
+    img{
+        width: 100%;
+    }
+    }
 
 }
 .contact{

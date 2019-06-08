@@ -260,6 +260,10 @@ body .team i::before {
   top: 25%;
 }
 
+body .sponsors [class^="img-"] img {
+  width: 100%;
+}
+
 body .contact {
   padding: 5% 0;
   background-color: black;
