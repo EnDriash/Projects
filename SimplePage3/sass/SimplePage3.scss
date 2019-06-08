@@ -273,6 +273,8 @@ body{
         color: rgb(247,247,247);
         font-size: 1.5em;
     }
+    .specrow{
+        min-height: 350px;
     form{
         height: 40vh;
         
@@ -296,6 +298,7 @@ body{
             border-radius: 10px;
         }
     }
+    }   
     .button{
         @include button;
         width: 20vw;
