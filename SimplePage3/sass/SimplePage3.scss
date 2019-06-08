@@ -73,7 +73,7 @@ body{
     position: relative;
     min-height: 500px;
         header{
-            #logo{
+            .logo{
                 img{
                 position: relative;
                 object-fit: contain;
@@ -253,7 +253,7 @@ body{
     }
 }
 .sponsors{
-padding: 0;
+    
 
 }
 .contact{
@@ -308,7 +308,7 @@ footer{
     padding: 2%;
     p{
         display: inline-block;
-        float:left;
+        float: left;
         font-size: 1em;
     }
     

@@ -6,13 +6,20 @@
         }
         .jumbotron .content .button, .contact .button{
             width: 30vw;
+            margin: 0 auto;
         }
-        .jumbotron header{
-            .hamburger{
-                display: inline-block;
+        .jumbotron {
+            p, h1 {
+                transform: scale(0.6);
+                margin: 0;
             }
-            nav {
-                display: none;
+            header{
+                .hamburger{
+                    display: inline-block;
+                }
+                nav {
+                    display: none;
+                }
             }
         }
         .specrow{ 

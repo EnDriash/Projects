@@ -4,6 +4,11 @@
   }
   body .jumbotron .content .button, body .contact .button {
     width: 30vw;
+    margin: 0 auto;
+  }
+  body .jumbotron p, body .jumbotron h1 {
+    transform: scale(0.6);
+    margin: 0;
   }
   body .jumbotron header .hamburger {
     display: inline-block;
