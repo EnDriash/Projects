@@ -1,0 +1,258 @@
+body {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  /* The Modal (background) */
+  /* Modal Content */
+  /* The Close Button */
+}
+
+body header {
+  background-color: #34db4a;
+  color: white;
+  font-size: 2em;
+  padding: 30px;
+}
+
+body .modal {
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 4%;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+body div.endmodal {
+  display: none;
+}
+
+body .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 5px 20px;
+  border: 1px solid #888;
+  width: 60%;
+  font-size: 2em;
+  border-radius: 20px;
+  box-shadow: #000 2px 2px 4px;
+}
+
+body .modal-content #setsubm {
+  border-radius: 20px;
+  border: #000 2px solid;
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  font-size: 0.5em;
+}
+
+body .modal-content #setsubm:hover {
+  cursor: pointer;
+}
+
+body .modal-content #setsubm:focus {
+  outline: none;
+}
+
+body .modal-content #setsubm:active {
+  font-weight: bold;
+}
+
+body .modal-content #rounds {
+  position: relative;
+  width: 250px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+body .modal-content #rounds:hover {
+  cursor: pointer;
+}
+
+body .modal-content #rounds:-ms-input-placeholder {
+  font-size: 0.3em;
+  bottom: 15px;
+  position: relative;
+}
+
+body .modal-content #rounds::placeholder {
+  font-size: 0.3em;
+  bottom: 15px;
+  position: relative;
+}
+
+body .modal-content #rounds:focus {
+  outline: none;
+}
+
+body .modal-content form input:hover {
+  cursor: pointer;
+}
+
+body .endmodal {
+  display: none;
+  overflow: auto;
+}
+
+body .endmodal .modal-content {
+  margin-bottom: 4%;
+}
+
+body .endmodal .modal-content h1 {
+  font-size: 50px;
+}
+
+body .endmodal .modal-content h4 {
+  margin: 15px;
+}
+
+body .endmodal .modal-content p {
+  margin: 0;
+  padding: 0;
+  color: red;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+body .endmodal .modal-content table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+body .endmodal .modal-content table, body .endmodal .modal-content th, body .endmodal .modal-content td {
+  border: 2px solid black;
+  padding: 10px;
+}
+
+body .endmodal .modal-content button {
+  border-radius: 20px;
+  border: #000 2px solid;
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+  font-size: 0.5em;
+}
+
+body .endmodal .modal-content button:hover {
+  cursor: pointer;
+}
+
+body .endmodal .modal-content button:focus {
+  outline: none;
+}
+
+body .endmodal .modal-content button:active {
+  font-weight: bold;
+}
+
+body .close {
+  color: #353030;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+body .close:hover, body .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body #playsec button {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border-style: none;
+  margin: 2% 4%;
+  border: 4px #4b7724 solid;
+  background: #f7d276;
+}
+
+body #playsec button:hover {
+  cursor: pointer;
+}
+
+body #playsec button:active {
+  border-style: none;
+  color: white;
+}
+
+body #playsec button:focus {
+  outline: none;
+  font-weight: bold;
+}
+
+body #playsec i {
+  height: 100px;
+  width: 100px;
+}
+
+body #playsec i:active {
+  color: white;
+}
+
+body #playsec i::before {
+  position: relative;
+  font-size: 50px;
+  top: 25%;
+}
+
+body .container div button {
+  border-radius: 20px;
+  border: #000 2px solid;
+  width: 150px;
+  height: 50px;
+  margin: 20px;
+}
+
+body .container div button:hover {
+  cursor: pointer;
+}
+
+body .container div button:focus {
+  outline: none;
+}
+
+body .container div button:active {
+  font-weight: bold;
+}
+
+body .container #roundsnumber {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+body .container #communicat {
+  font-size: 1.4em;
+  margin: 20px;
+}
+
+body footer {
+  position: relative;
+  width: 100%;
+  top: 0px;
+  background-color: #000;
+  color: white;
+  padding: 20px;
+  font-size: 0.5em;
+  margin-top: 20px auto 0;
+}
+/*# sourceMappingURL=PaperRockScissors.css.map */

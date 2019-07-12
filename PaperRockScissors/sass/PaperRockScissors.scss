@@ -9,12 +9,10 @@ header{
     background-color: rgb(52, 219, 74);
     color: white;
     font-size: 2em;
-    
     padding: 30px;
 }
 /* The Modal (background) */
 .modal {
-    display: block; /* block by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
     padding-top: 4%; /* Location of the box */
@@ -25,8 +23,11 @@ header{
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    
   }
+
+ div.endmodal{
+    display: none;
+ }
   
   /* Modal Content */
   .modal-content {
@@ -39,7 +40,7 @@ header{
     border-radius: 20px;
     box-shadow: #000 2px 2px 4px;
         #setsubm{
-            border-radius: 20px;
+                border-radius: 20px;
                 border: #000 2px solid;
                 width: 150px;
                 height: 50px;
@@ -82,7 +83,54 @@ header{
             }
         }
   }
-  
+  .endmodal{
+      display: none;
+      overflow: auto;
+    .modal-content{
+        margin-bottom: 4%;
+        h1{
+            font-size: 50px;
+        }
+        h4{
+            margin: 15px;
+
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            color: red;
+            font-weight: 600;
+            font-size: 35px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+        
+        table, th, td {
+            border: 2px solid black;
+            padding: 10px;
+        }
+        button{
+            border-radius: 20px;
+            border: #000 2px solid;
+            width: 150px;
+            height: 50px;
+            margin: 20px;
+            font-size: 0.5em;
+            &:hover{
+                cursor: pointer;
+            }
+            &:focus{
+                outline: none;
+            }
+            &:active{
+                font-weight: bold;
+            }
+        }
+    }
+  }
   /* The Close Button */
   .close {
     color: #353030;
@@ -95,7 +143,9 @@ header{
             text-decoration: none;
             cursor: pointer;
         }
-}
+    }
+
+   
 
 #playsec {
     button{

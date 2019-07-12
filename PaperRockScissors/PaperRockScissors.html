@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' >
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-        <link href="PaperRockScissors.css" type="text/css" rel="stylesheet">
+        <link href="./css/PaperRockScissors.css" type="text/css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -31,9 +31,9 @@
             <h1>Welcome! Let's PLAY!</h1>
             <div id="roundsnumber"></div>
             <div id="playsec">
-                <button id="paper" ><i class='far fa-hand-paper'></i></i></button>
-                <button id="rock"><i class='far fa-hand-rock'></i></button>
-                <button id="scissors"><i class='far fa-hand-scissors'></i></i></button>
+                <button class="playerMove" id="paper" ><i class='far fa-hand-paper'></i></i></button>
+                <button class="playerMove" id="rock"><i class='far fa-hand-rock'></i></button>
+                <button class="playerMove" id="scissors"><i class='far fa-hand-scissors'></i></i></button>
             </div>
             <div>
                     <button id="ng">NEW GAME</button>
@@ -42,11 +42,35 @@
             <div id="communicat"></div>
             
         </div>
+
+        <div id="endModal" class="modal endmodal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Congratulation!</h1>
+            <p></p>
+            <table>
+                <h4>Statistics:</h4>
+                <thead>
+                    <th>Move</th>
+                    <th>Player1:</th>
+                    <th>Player2:</th>
+                    <th>Won:</th>
+                    <th>Score:</th>
+                </thead>
+                <tbody class="tablebodystat">
+                    
+                </tbody>
+                
+            </table>
+            <button id="okbutton">OK</button>
+          </div>
+        </div>
+
         <footer>
             <h1>@Copyright by Jędrzej Siewierski-Krawczyk</h1>
         </footer>
 
-<script type="text/javascript" src="PaperRockScissors.js" ></script>
+<script type="text/javascript" src="./js/PaperRockScissors.js" ></script>
 </body>
 
 </html>
