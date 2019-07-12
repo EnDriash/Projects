@@ -11,7 +11,7 @@ var manualplay = document.getElementById("manualplay");
 var autoplay = document.getElementById("autoplay"); 
 var com = document.getElementById("communicat");
 var table = document.querySelector(".tablebodystat");
-var params = { play: "", movenumber: 0, round: 0, roundleft: 0, player1: "", player2: "", p1score: 0, p2score: 0, progress: []}
+var params = { play: "", movenumber: 0, round: 0, roundleft: 0, player1: undefined, player2: undefined, p1score: 0, p2score: 0, progress: []}
 
 //MODAL SECTION
 // When the user clicks on <span> (x), close the modal
@@ -53,6 +53,8 @@ document.getElementById("setsubm").addEventListener("click",
 );
 document.querySelector(".endmodal button").addEventListener("click", function(){
     endmodal.style.display = "none";
+    params["progress"] = [];
+    table.innerHTML = "";
     }
 );
 
@@ -138,7 +140,7 @@ function transition(){
     if (params.p2score > params.p1score && params.roundleft === 0 ) {
         endmodal.style.display = "block";
         endmodal.querySelector("p").innerHTML = "<br>Player 2 WON !!!";
-        for(var i = 0; i<params.progress.length;i++){
+        for(var i = 0; i < params.progress.length; i++){
             table.innerHTML += 
             "<tr>" +
             "<td>" + params.progress[i].move + "</td>" +
@@ -168,16 +170,21 @@ ng.onclick = function() {
     params.player2 = undefined;
     params.p1score = 0;
     params.p2score = 0;
+    params.movenumber = 0;
+    table.innerHTML = "";
+    params["progress"] = [];
     modal.style.display = "block";
   }
 res.onclick = function() {
     params.roundleft = params.round;
     roundsnumber.innerHTML = "Number of rounds: " + params.roundleft;
     params.player1 = undefined;
-
     params.player2 = undefined;
     params.p1score = 0;
     params.p2score = 0;
+    params.movenumber = 0;
+    table.innerHTML = "";
+    params["progress"] = [];
 }
 
 })();
