@@ -1,0 +1,62 @@
+.facts {
+    background-color: black;
+    position: relative;
+    padding-bottom: 0;
+    .factsrow {
+        color: white;
+        .fact {
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            h1 {
+                color: $maincolor;
+                font-weight: 900;
+                font-size: 68px;
+                margin-bottom: 0;
+            }
+
+            h4 {
+                color: white;
+                font-weight: 600;
+            }
+            p{
+                margin: 2vh 0;
+                color: $silvercolor;
+            }
+        }
+    }
+    .social-media{
+        position: relative;
+        width: 100%;
+        margin-top: 4vh;
+        padding: 2vh 0;
+        justify-content: center;
+        bottom: 0;
+        background-color: white;
+        align-items: center;
+        p{
+            font-weight: 900;
+            color: $silvercolor;
+        }
+        .icon{
+            padding: 0 1vh;
+            margin: 0 2vh;
+            i,p{
+                display: inline-block;
+            }
+            p{
+                font-weight: 900;
+                font-size: 14px;
+                color: $silvercolor;
+            }
+
+        }
+        .fa-share-alt{
+            background: none;
+            color: $silvercolor;
+            &:before{
+                font-size: 40px;
+            }
+        }
+    }
+}

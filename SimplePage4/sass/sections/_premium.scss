@@ -1,0 +1,35 @@
+.premium{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    .currentbox{
+        .desc{
+            flex-direction: column;
+            .feature{
+                flex-direction: column;
+                h2{
+                    margin: 0 0 1vh;
+                }
+                p{
+                    margin-bottom: 2vh;
+                }
+                ul{
+                    margin-top: 0;
+                    list-style: none;
+                    li::before{
+                        content: "- ";
+                        font-size: 20px;
+                    }
+                }
+            }
+            .counterimage{
+                align-items: flex-start;
+            }
+        }
+    }
+    .switches{
+        margin: 5vh;
+        display: flex;
+        justify-content: center;
+    }
+}

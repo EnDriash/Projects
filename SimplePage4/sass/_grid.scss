@@ -1,0 +1,41 @@
+.row{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.specrow{
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0 16.25vw;
+    flex: 100%;
+}
+
+[class*="col-"] {
+    display: inline-flex;
+    box-sizing: border-box;
+  }
+
+@for $i from 1 through 12 {
+    .col-sm-#{$i} {
+        width: calc(8.333333% * #{$i});
+        flex: calc(8.333333% * #{$i});
+    }
+}
+@for $i from 1 through 12 {
+    .col-md-#{$i} {
+        width: calc(8.333333% * #{$i});
+        flex: calc(8.333333% * #{$i});
+    }
+}
+@for $i from 1 through 12 {
+    .col-lg-#{$i} {
+        width: calc(8.333333% * #{$i});
+        flex: calc(8.333333% * #{$i});
+    }
+}
+@for $i from 1 through 12 {
+    .col-xl-#{$i} {
+        width: calc(8.333333% * #{$i});
+        flex: calc(8.333333% * #{$i});
+    }
+}

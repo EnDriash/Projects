@@ -1,0 +1,28 @@
+@import '../vendor/normalize';
+@import 'variables';
+@import 'mixins';
+@import 'grid';
+@import './mediaqueries';
+@import './general';
+
+@import './components/fonts';
+@import './components/buttons';
+@import './components/switch';
+@import './components/sectionheader';
+@import './components/icon';
+
+@import './sections/header';
+@import './sections/hero';
+@import './sections/aboutus';
+@import './sections/services';
+@import './sections/projects';
+@import './sections/team';
+@import './sections/clients';
+@import './sections/sponsors';
+@import './sections/price';
+@import './sections/premium';
+@import './sections/facts';
+@import './sections/contacts';
+@import './sections/map';
+@import './sections/footer';
+

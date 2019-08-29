@@ -1,0 +1,24 @@
+.team{
+background-image: url(../images/bg_img_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    .workers{
+        justify-content: space-around;
+        .worker{
+            margin: 1vw;
+            background-color: white;
+            flex-direction: column;
+            align-items: center;
+            img, .icons{
+                margin: 2vh;
+            }
+        }
+    }
+    .switches{
+        display: flex;
+        justify-content: center;
+    }
+}

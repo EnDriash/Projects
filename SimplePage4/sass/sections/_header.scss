@@ -1,0 +1,49 @@
+header {
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    .specrow{
+        flex-wrap: nowrap;
+        align-items: center;
+        .logo {
+            display: flex;
+            flex: 5%;
+        }
+        nav {
+            display: flex;
+            flex: 95%;
+            justify-content: flex-end;
+            height: 10vh;
+            ul {
+                display: flex;
+                flex: 100%;
+                margin: 0 0 0 10%;
+                padding: 0;
+                list-style: none;
+                li {                    
+                    display: inline-flex;
+                    flex: 100%;
+                    height: 10vh;
+                    align-items: center;
+                    justify-content: space-around;
+                    a {
+                        margin: 0 auto;
+                        text-decoration: none;
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $greycolor;
+                    }
+                &:hover{
+                    box-sizing: border-box;
+                    border-bottom: 1vh $maincolor solid;
+                    a{
+                        position: relative;
+                        top: 0.5vh;
+                    }
+                }
+                }
+            }
+        }
+    }
+}

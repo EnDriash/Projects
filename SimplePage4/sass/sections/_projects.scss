@@ -1,0 +1,65 @@
+.projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .tabs{
+        display: flex;
+        flex-direction: row;
+        background-color: $greycolor;
+        border: 1px solid $silvercolor;
+        border-radius: 50px;
+        padding: 1vh 2vw;
+        margin-bottom: 5vh;
+        p{
+            padding: 1vh 2vw;
+            box-sizing: border-box;
+            border-right: 1px solid $silvercolor;
+            &:last-child{
+                border-right: none;
+            }
+            &:hover{
+                box-sizing: border-box;
+                border-bottom: 0.5vh $maincolor solid;
+                padding-bottom: 0;
+                cursor: pointer;
+                font-weight: 400;
+            }
+        }
+    }
+    .projectgallery{
+        align-content: space-around;
+        flex-wrap: wrap;
+
+        .photo{
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center ;
+            align-content: space-around;
+            position: relative;
+            padding: 1vh;
+            img{
+                width: 100%;
+            }
+            .hoverinfo{
+                box-sizing: border-box;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                color: $greycolor;
+                display: none;
+            }
+            &:hover .hoverinfo {
+                display: flex;
+                text-align: center;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 2vh;
+                background-color: black;
+                opacity: 0.6;
+                
+            
+            }
+        }
+    }
+}

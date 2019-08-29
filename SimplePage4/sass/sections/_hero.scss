@@ -1,0 +1,29 @@
+.hero{
+    background-image: url(../images/bg_img_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+        .content{
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $greycolor;
+            flex-direction: column;
+            p{
+                font-weight: 900;
+                font-size: 100px;
+                margin: 0;
+                span{
+                    color: $maincolor;
+                }
+            }
+        }
+        .switches{
+            display: flex;
+            justify-content: center;
+        }
+}

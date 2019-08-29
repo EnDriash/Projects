@@ -1,0 +1,10 @@
+.switch{
+    margin: 2vh 10px;
+    border-radius: 50px;
+    border: 2px solid $maincolor;
+    padding: 10px;
+    &:hover{
+        background-color: $maincolor;
+        cursor: pointer;
+    }
+} 

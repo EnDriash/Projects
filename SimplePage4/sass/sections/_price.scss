@@ -1,0 +1,50 @@
+.price{
+    background-color: $greycolor;
+    .prices{
+        .pricetab{
+            margin: 1vw;
+            background-color: white;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                margin: 5vh 0 2vh;
+                font-weight: 600
+            }
+            h1{
+                margin: 0;
+                font-weight: 900;
+            }
+            h4{
+                margin: 0;
+                color: $silvercolor;
+                font-size: 12px;
+            }
+            ul{
+                list-style: none;
+                text-align: center;
+                padding: 0;
+                li{
+                    color: $silvercolor;
+                    &::after{
+                        content: "";
+                        width: 10px;
+                        margin: 1vh auto;
+                        border-bottom: 1px $silvercolor solid;
+                        display: block;
+                    }
+                    &:last-child::after{
+                        display: none;
+                    }
+                }
+            }
+            button{
+                width: 60%;
+                background-color: black;
+                height: 6vh;
+                &:hover{
+                    background-color: $maincolor;
+                }
+            }
+        }
+    }
+}

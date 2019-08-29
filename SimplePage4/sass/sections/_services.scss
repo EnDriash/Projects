@@ -1,0 +1,20 @@
+.services{
+    background-color: black;
+    color: $greycolor;
+    .offerts{
+        display: flex;
+        align-items: flex-start;
+        .offert{
+            padding: 0 2vw;
+            flex-direction: column;
+            text-align: center;
+                img{
+                    padding:  0 4.5vw;
+                }
+                p{
+                    color: $silvercolor;
+                    font-weight: 300;
+                }
+        }
+    }
+}

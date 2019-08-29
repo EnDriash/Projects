@@ -1,0 +1,13 @@
+p,a,li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0;
+}
+
+@for $i from 1 through 6{
+    h#{$i}{
+        font-family: 'Montserrat', sans-serif;
+        font-size: calc((6 - #{$i}) * 7px)
+    }
+}

@@ -1,0 +1,17 @@
+button{
+    margin: 3vh 0;
+    padding: 18px,43px;
+    border-radius: 50px;
+    font-size: 14px;
+    color: $greycolor;
+    font-weight: 600;
+    border-style: none;
+    background-color: $maincolor;
+    width: 12.5vw;
+    height: 6vh;
+    
+    &:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+} 

@@ -1,0 +1,32 @@
+i{
+    background-color: grey;
+    border-radius: 50px;
+    width: 17px;
+    height: 17px;
+    margin: 4px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    &:before{
+        font-size: 18px;
+    }
+    &:hover{
+        background-color: $maincolor;
+    }
+
+}
+i.fa-twitter.color{
+    background-color: $twitter-color;
+}
+i.fa-facebook-f.color{
+    background-color: $facebook-color;
+}
+i.fa-google-plus-g.color{
+    background-color: $gplus-color;
+}
+i.fa-pinterest.color{
+    background-color: $pinterest-color;
+}
+i.fa-linkedin-in.color{
+    background-color: $linkedin-color;
+}

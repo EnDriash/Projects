@@ -1,0 +1,40 @@
+.contact{
+    background-color: $greycolor;
+    .form{
+        justify-content: center;
+        form{
+            width: 40vw;
+            display: block;
+            color: $silvercolor;
+            flex-direction: column;
+            .input-row{
+                display: flex;
+                margin: 3vh 0;
+                justify-content: space-between;
+                input{
+                    flex-basis: 48%;
+                }
+                textarea{
+                    height: 12vh;
+                }
+
+                textarea, input{
+                    box-sizing: border-box;
+                    background-color: $greycolor;
+                    border: none;
+                    border-bottom: 2px solid $silvercolor;
+                    font-size: 20px;
+                    padding: 2vh 0 2vh 2vh;
+
+                    &::placeholder{
+                        font-weight: 400;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .button{
+        justify-content: center;
+    }
+}
