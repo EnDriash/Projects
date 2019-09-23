@@ -1,0 +1,20 @@
+@import "./_grid.scss";
+@import "./page/_mixins.scss";
+@import "./page/_variables.scss";
+
+@import "./page/_general.scss";
+
+//SECTIONS
+@import "./sections/_jumbotron.scss";
+@import "./sections/_newOne.scss";
+@import "./sections/_services.scss";
+@import "./sections/_heroquats.scss";
+@import "./sections/_prices.scss";
+@import "./sections/_benefits.scss";
+@import "./sections/_joincomunity.scss";
+@import "./sections/_gallery.scss";
+@import "./sections/_herotwo.scss";
+@import "./sections/_download.scss";
+@import "./sections/_footer.scss";
+
+@import "./page/_mediaQueries.scss";

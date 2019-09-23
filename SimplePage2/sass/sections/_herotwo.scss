@@ -1,0 +1,29 @@
+.hero-2{
+    color:white;
+    width: 100%;
+    background-image: url("../img/jumbotron.png") ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 450px;
+        .content{
+            text-align: center;
+            position: relative;
+            padding: 5% 25%;
+            .belt{
+                width: 20%;
+                margin: 4% auto;
+                border-top: 1.5px solid $maincolor;
+            }
+            
+            .button{
+                background-color: $maincolor;
+                border-radius: 100px;
+                margin: 5% auto;
+                width: 15%;
+                padding: 2.5% 5%;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+}

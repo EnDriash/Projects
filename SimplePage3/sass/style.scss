@@ -1,0 +1,14 @@
+@import "_grid.scss";
+@import "./page/_mixins.scss";
+@import "./page/_variables.scss";
+
+@import "./page/_general.scss";
+//SECTIONS
+@import "./sections/_jumbotron.scss";
+@import "./sections/_services.scss";
+@import "./sections/_portfolio.scss";
+@import "./sections/_aboutUs.scss";
+@import "./sections/_contact.scss";
+@import "./sections/_footer.scss";
+
+@import "./page/_mediaQueries.scss";

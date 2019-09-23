@@ -1,0 +1,70 @@
+.jumbotron{
+            
+    color:white;
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/jumbotron.png") ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 450px;
+        header{
+            padding: 5vh 0;
+            #logo{
+                img{
+                position: relative;
+                object-fit: contain;
+                }
+            }
+            nav{
+                ul{
+                    margin: 0;
+                    float: right;
+                    list-style: none;  
+
+                    li{
+                        display: inline-block;
+                        padding: 0 2px;
+                        font-weight: 600;
+                    }
+                }              
+            }
+        }  
+    
+
+    .content{
+        margin: 10vh auto ;
+        padding: 20px;
+        text-align: center;
+
+        h1{
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 2em;
+            
+            span{
+                font-weight: 700;
+            }
+        }
+
+        div{
+            margin: 2% 45%;
+            border-top: 1px solid $maincolor;
+        }
+
+        p{
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        .button{
+            background-color: $maincolor;
+            border-radius: 100px;
+            width: 10%;
+            padding: 1.5% 2.5%;
+            margin: 4% auto;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+    }
+}

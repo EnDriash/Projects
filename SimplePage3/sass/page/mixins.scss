@@ -1,0 +1,24 @@
+@mixin button{
+    color: white;
+    background-color: $maincolor;
+    width: 10vw;
+    padding: 1.5% 2.5%;
+    margin: 4% auto;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.4em;
+    border-radius: 2px;
+    transition: 0.1s linear;
+        &:hover{
+            text-shadow: 1px 1px;
+            border: 2px $maincolor solid;
+            box-shadow: 2px 2px 2px $maincolor;
+            cursor: pointer;
+        }
+}
+@mixin cardo{
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-weight: 400;
+}

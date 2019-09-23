@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    text-align: center;
+    p{
+        font-family: 'Roboto Slab', serif;
+        color: rgb(106,106,106);
+        font-size: 1.2em;
+    }
+    h1{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-weight: 600;
+        font-size: 3em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    h3{
+        color: black;
+        font-size: 1.5em; 
+        margin-bottom: 0;
+    }
+    i{
+        transition: 0.1s linear;
+        margin: 2%;
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+
+    .services, .aboutus, .sponsors, footer{
+        padding: 5% 0;
+        background-color: white;
+    }
+    .portfolio, .team{
+        padding: 5% 0;
+        background-color: rgb(247,247,247);
+    }
+}

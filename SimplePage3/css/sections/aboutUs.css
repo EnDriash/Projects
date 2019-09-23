@@ -1,0 +1,30 @@
+footer {
+  padding: 2%;
+}
+
+footer p {
+  display: inline-block;
+  float: left;
+  font-size: 1em;
+}
+
+footer div {
+  display: block;
+}
+
+footer div i {
+  display: block;
+  border-radius: 50%;
+  background-color: black;
+  width: 40px;
+  height: 40px;
+}
+
+footer div i::before {
+  position: relative;
+  top: 20%;
+  font-size: 1.5em;
+  color: white;
+}
+
+/*# sourceMappingURL=aboutUs.css.map */

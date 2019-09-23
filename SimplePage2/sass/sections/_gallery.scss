@@ -1,0 +1,35 @@
+.gallery{
+    padding: 5% 0;
+    background-color: white;
+    .header{
+        text-align: center;
+        h1{
+            font-size: 2.5em;
+        }
+        .belt{
+            width: 20%;
+            margin: 5% auto;
+            border-top: 1.5px solid $maincolor;
+        }
+    }
+    [class^="update-"]{
+        box-sizing: border-box;
+        padding: 2.5%;
+        color: grey;
+        img{
+            width: 100%;
+            height:100%;
+            object-fit: fill;
+        }
+        .content{
+            background-color: rgb(244,244,244);
+            padding: 5%;
+            margin:0;
+        }
+    }
+    .showmore{
+        text-align: center;
+        color: $maincolor;
+        font-size: 1.5em;
+    }
+}

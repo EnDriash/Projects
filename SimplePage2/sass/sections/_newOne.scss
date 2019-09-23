@@ -1,0 +1,45 @@
+.newone{
+    background-color: rgb(244,244,244);
+    padding: 10vh 0 ;
+    margin-right: 0%;
+    position: relative;
+    &::before{
+        content: "";
+        height: 25vh;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        bottom: 0;
+    }
+    .row{
+        position: relative;
+        margin-right: 0;   
+        overflow: none;
+
+        .content{
+            display: block;
+            color: rgb(90,90,90);
+            display: inline;
+            h1{
+                font-size: 2em; 
+            }
+            .belt{ 
+                width: 60%;
+                margin: 5% 0;
+                border-top: 1.5px solid $maincolor;
+            }
+            .seevideo{
+                    color: $maincolor;
+                p{
+                    display: inline;
+                }
+            }
+        }
+        .img{
+            position: relative;
+            img{
+                width:100%;
+            }
+        }
+    }
+}

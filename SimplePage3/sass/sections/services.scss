@@ -1,0 +1,22 @@
+.services{
+    h1 + p{
+        @include cardo;
+        font-size: 1.5em;
+    }
+       
+    [class^="col-"]{
+        i{
+            border-radius: 50%;
+            border: 2px $maincolor solid;
+            width: 80px;
+            height: 80px;
+            &::before{
+                color: $maincolor;
+                font-size: 2.5em;
+                position: relative;
+                top:25%;
+            }
+        }
+        
+    }
+}

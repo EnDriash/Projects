@@ -1,0 +1,18 @@
+.benefits{
+    padding: 5% 0;
+    background-color: white;
+    
+        [class^="benefit-"]{
+            box-sizing: border-box;
+            padding: 2.5%;
+            h3{
+                color: $maincolor;
+            }
+            p{
+                color: grey;
+                font-family: "Lato", sans-serif;
+                font-style: italic;
+            }
+           
+        }
+}

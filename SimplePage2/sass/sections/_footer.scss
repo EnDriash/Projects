@@ -1,0 +1,14 @@
+footer{
+    padding: 5vh 0;
+    background-color: rgb(43,43,43);
+    color: white;
+    #copyright{
+        display: inline-block;
+    }
+    #designed{
+        float: right;
+        span{
+            color: $maincolor;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+footer{
+  padding: 2%;
+  p{
+      display: inline-block;
+      float: left;
+      font-size: 1em;
+  }
+  
+  div{
+      display: block;
+      i{
+          display: block;
+          border-radius: 50%;
+          background-color: black;
+          width: 40px;
+          height: 40px;
+          &::before{
+              position: relative;
+              top: 20%;
+              font-size: 1.5em;
+              color:white;
+          }
+      }
+  }
+}
