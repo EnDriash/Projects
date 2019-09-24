@@ -1,10 +1,174 @@
 
 @media  (max-width: 767px) { // sm
+    [class*="col-"] {
+        padding: 1vw;
+      }
+    .specrow{
+        padding: 2vh 0;
+        margin: 0 2.5%;
+    }
+    .belt{
+        margin: 0 auto !important;
+    }
+    .jumbotron .content .button{
+        width: 20vw;
+    }
+    .newone{
+        text-align: center;
+        .content{
+            margin: 5vh auto;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    .services .icons [class^="icon-"]{
+        margin: 0;
+    }
+    .heroquats{
+        .content{
+            .quate{
+                font-size: 4em;
+            }
+        }
+    }
 
+   .prices .offerts [class^="offert-"]{
+       min-height: 55vh;
+       margin: 5vh 0 ;
+        .topsec{
+            padding-bottom: 4%;
+            height: 30%;
+            font-size: 1.4em !important;
+            .package{
+                padding: 5px;
+                p{
+                    font-size: 1.6em !important;
+                }
+            }
+            p{
+                margin: 0 !important;
+            }
+        }
+        .bottomsec{
+            font-size: 1.5em !important;
+            height: 75%;
+            padding: 5% 0;
+            ul{
+                padding: 2.5% 0;
+
+                li{
+                    padding: 2% 0;
+                }
+            }
+        }
+   }
+   .gallery [class^="update-"]{
+       padding: 0.5%;
+   }
+   .benefits{
+    [class^="benefit-"]{
+        padding: 0;
+        min-height: 50vh;
+    }
+   }
+   .joincomunity{
+       p{
+        font-size: 2em !important;
+       }
+       .button {
+           p {
+                font-size: 1.5em !important;
+            }
+        }
+   }
+   .hero-2{
+       .content{
+           padding: 5%;
+           font-size: 1.2em;
+           .button{
+               width: 25%;
+           }
+       }
+   }
+   .downloadsec{
+       .content{
+           padding: 0 !important;
+           .belt{
+            margin-left: 0 !important;
+        }
+       }
+       
+   }
 }
 @media (min-width: 768px) and (max-width: 991px) { //md
+    
+    [class*="col-"] {
+        padding: 1vw;
+      }
+    .specrow{
+        padding: 1vh 0;
+        margin: 0 1%;
+    }
+    .belt{
+        margin: 0 auto !important;
+    }
+    .jumbotron .content .button{
+        width: 20vw;
+    }
+    .newone{
+        text-align: center;
+        .content{
+            margin: 5vh auto;
+        }
+        &::before{
+            display: none;
+        }
+    }
+    .services .icons [class^="icon-"]{
+        margin: 0;
+    }
 
+   .prices .offerts [class^="offert-"]{
+       margin: 3vh 0 ;
+       font-size: 2em !important;
+       .topsec{
+        padding-bottom: 5% 0 10%;
+        }
+    }
+   
+   .gallery [class^="update-"]{
+       padding: 0.5%;
+   }
+   .joincomunity{
+       p{
+        font-size: 2em !important;
+       }
+       .button p{
+        font-size: 1.5em !important;
+       }
+   }
+   .hero-2{
+       .content{
+           padding: 5%;
+           font-size: 1.2em;
+       }
+   }
+   .downloadsec{
+       .content{
+           padding: 0 !important;
+           .belt{
+            margin-left: 0 !important;
+        }
+       }
+       
+   }
 }
 @media (min-width: 992px) and (max-width: 1199px) { //lg
-    
+    [class*="col-"] {
+        padding: 1vw;
+      }
+    .specrow{
+        margin: 2vh 2vw;
+    }
 }
