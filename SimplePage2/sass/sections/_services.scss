@@ -12,6 +12,7 @@
         }
 
         .icons{
+            overflow: hidden;
             [class^="icon-"] {
                 text-align: center;
                 margin: 7% auto 15%;
@@ -26,6 +27,12 @@
                             top: 20%;
                         }
                     }
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1); 
+                    
+                }
             }
+            
         }     
     }

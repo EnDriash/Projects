@@ -90,6 +90,10 @@
                     border-style: none;
                     border-radius: 50px;
                     background-color: $maincolor;
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.1); 
+                    }
                 }
 
             }

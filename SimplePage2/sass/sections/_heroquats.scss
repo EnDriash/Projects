@@ -6,7 +6,7 @@
     color: white;
     text-align: center;
     margin: 0;
-
+    overflow: hidden;
         .content{
             position: relative;
             top: 3vh;
@@ -20,6 +20,7 @@
                 font-size: 8em;
                 font-weight: bold;
                 color: $maincolor;
+                
             }
             .turn{
                 transform: rotate(180deg);
@@ -31,5 +32,9 @@
             font-size: 5em;
             position: relative;
             top: 25vh;
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1); 
+            }
         }               
 }

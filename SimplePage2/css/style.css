@@ -344,7 +344,7 @@ body .container main .triangle {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 450px;
+  min-height: 550px;
 }
 
 .jumbotron header {
@@ -357,6 +357,29 @@ body .container main .triangle {
      object-fit: contain;
 }
 
+.jumbotron header .hamburger {
+  display: none;
+  width: 18vw;
+  height: 20vw;
+  float: right;
+  cursor: pointer;
+}
+
+.jumbotron header .hamburger:hover span {
+  box-shadow: 1px 1px 1px;
+  transform: scale(1.1);
+}
+
+.jumbotron header .hamburger span {
+  display: block;
+  border-top: 4px #ed145b solid;
+  border-bottom: 4px #ed145b solid;
+  box-shadow: 1px 1px 1px;
+  border-radius: 10px;
+  margin: 15% 0;
+  width: 80%;
+}
+
 .jumbotron header nav ul {
   margin: 0;
   float: right;
@@ -365,12 +388,17 @@ body .container main .triangle {
 
 .jumbotron header nav ul li {
   display: inline-block;
-  padding: 0 2px;
+  padding: 0 5px;
   font-weight: 600;
 }
 
+.jumbotron header nav ul li:hover {
+  cursor: pointer;
+  color: #ed145b;
+}
+
 .jumbotron .content {
-  margin: 10vh auto;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
 }
@@ -403,6 +431,11 @@ body .container main .triangle {
   margin: 4% auto;
   text-transform: uppercase;
   font-weight: 500;
+}
+
+.jumbotron .content .button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .newone {
@@ -451,6 +484,11 @@ body .container main .triangle {
   display: inline;
 }
 
+.newone .row .content .seevideo:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
 .newone .row .img {
   position: relative;
 }
@@ -472,6 +510,10 @@ body .container main .triangle {
   border-top: 1.5px solid #ed145b;
 }
 
+.services .icons {
+  overflow: hidden;
+}
+
 .services .icons [class^="icon-"] {
   text-align: center;
   margin: 7% auto 15%;
@@ -490,6 +532,11 @@ body .container main .triangle {
   top: 20%;
 }
 
+.services .icons [class^="icon-"]:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .heroquats {
   background-image: url("../img/jumbotron.png");
   height: 50vh;
@@ -497,6 +544,7 @@ body .container main .triangle {
   color: white;
   text-align: center;
   margin: 0;
+  overflow: hidden;
 }
 
 .heroquats .content {
@@ -524,6 +572,11 @@ body .container main .triangle {
   font-size: 5em;
   position: relative;
   top: 25vh;
+}
+
+.heroquats [class^="fas"]:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .prices {
@@ -630,6 +683,11 @@ body .container main .triangle {
   background-color: #ed145b;
 }
 
+.prices .offerts [class^="offert-"] .bottomsec button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .benefits {
   padding: 5% 0;
   background-color: white;
@@ -676,6 +734,11 @@ body .container main .triangle {
   font-weight: 600;
 }
 
+.joincomunity .button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 .gallery {
   padding: 5% 0;
   background-color: white;
@@ -720,6 +783,11 @@ body .container main .triangle {
   font-size: 1.5em;
 }
 
+.gallery .showmore:hover {
+  cursor: pointer;
+  font-weight: 900;
+}
+
 .hero-2 {
   color: white;
   width: 100%;
@@ -750,6 +818,11 @@ body .container main .triangle {
   padding: 2.5% 5%;
   text-transform: uppercase;
   font-weight: 400;
+}
+
+.hero-2 .content .button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .downloadsec {
@@ -800,6 +873,11 @@ body .container main .triangle {
   font-weight: 500;
 }
 
+.downloadsec .row .content .button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
 footer {
   padding: 5vh 0;
   background-color: #2b2b2b;
@@ -829,11 +907,58 @@ footer #designed span {
   .belt {
     margin: 0 auto !important;
   }
+  .jumbotron {
+    min-height: 450px !important;
+  }
+  .jumbotron header .hamburger {
+    z-index: 3;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    display: block;
+  }
+  .jumbotron header nav {
+    display: none;
+  }
+  .jumbotron header nav.show {
+    z-index: 1;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.95;
+    background-color: black;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+  }
+  .jumbotron header nav.show ul {
+    border-top: 2px solid white;
+    width: 100%;
+    height: 70vh;
+    margin: 70px auto;
+  }
+  .jumbotron header nav.show ul li {
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: block;
+    margin: 7vh 10vw 0;
+    padding-bottom: 2vh;
+    border-bottom: 1px solid white;
+  }
+  .jumbotron header nav.show ul li:last-child {
+    border-bottom: none;
+  }
   .jumbotron .content .button {
-    width: 20vw;
+    padding: 2vh 4vw;
+    width: 35%;
   }
   .newone {
+    padding-top: 2.5%;
     text-align: center;
+  }
+  .newone p {
+    font-size: 1.2em;
   }
   .newone .content {
     margin: 5vh auto;
@@ -842,17 +967,21 @@ footer #designed span {
     display: none;
   }
   .services .icons [class^="icon-"] {
-    margin: 0;
+    margin: 2vh 0;
+  }
+  .heroquats .content p {
+    margin: auto 10%;
   }
   .heroquats .content .quate {
-    font-size: 4em;
+    font-size: 3.5em;
   }
   .prices .offerts [class^="offert-"] {
     min-height: 55vh;
-    margin: 5vh 0;
+    margin: 2vh 0;
+    padding-bottom: 0;
   }
   .prices .offerts [class^="offert-"] .topsec {
-    padding-bottom: 4%;
+    padding-bottom: 10%;
     height: 30%;
     font-size: 1.4em !important;
   }
@@ -880,8 +1009,13 @@ footer #designed span {
     padding: 0.5%;
   }
   .benefits [class^="benefit-"] {
+    margin: 0 auto;
+    text-align: center;
     padding: 0;
-    min-height: 50vh;
+    min-height: 45vh;
+  }
+  .benefits [class^="benefit-"] p {
+    font-size: 1.3em;
   }
   .joincomunity p {
     font-size: 2em !important;
@@ -894,10 +1028,13 @@ footer #designed span {
     font-size: 1.2em;
   }
   .hero-2 .content .button {
-    width: 25%;
+    width: 35%;
   }
   .downloadsec .content {
     padding: 0 !important;
+  }
+  .downloadsec .content p {
+    font-size: 18px;
   }
   .downloadsec .content .belt {
     margin-left: 0 !important;

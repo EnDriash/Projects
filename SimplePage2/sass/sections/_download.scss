@@ -37,6 +37,10 @@
                     width: 35%;
                     padding: 4% 8%;
                     font-weight: 500;
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.1); 
+                    }
                 }
         }
     }

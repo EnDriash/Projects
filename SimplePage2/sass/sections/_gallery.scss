@@ -31,5 +31,9 @@
         text-align: center;
         color: $maincolor;
         font-size: 1.5em;
+        &:hover{
+            cursor: pointer;
+            font-weight: 900; 
+        }
     }
 }

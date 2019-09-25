@@ -1,5 +1,6 @@
 
 @media  (max-width: 767px) { // sm
+   
     [class*="col-"] {
         padding: 1vw;
       }
@@ -10,11 +11,63 @@
     .belt{
         margin: 0 auto !important;
     }
-    .jumbotron .content .button{
-        width: 20vw;
+    .jumbotron {
+        min-height: 450px !important;
+        header{
+            .hamburger{
+                z-index: 3;
+                position: fixed;
+                right: 10px;
+                top: 10px;
+                display: block;
+            }
+            nav{
+                display: none;
+                &.show{
+                    z-index: 1;
+                    position: fixed;
+                    display: block; 
+                    width: 100%;
+                    height: 100vh;
+                    opacity: 0.95;
+                    background-color: black;
+                    overflow-y: auto;
+                    top: 0;
+                    left: 0;
+                    ul {
+                        border-top: 2px solid white;
+                        width: 100%;
+                        height: 70vh;
+                        margin: 70px auto;
+                        li{
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            display: block;
+                            margin: 7vh 10vw 0;
+                            padding-bottom: 2vh;
+                            border-bottom: 1px solid white;
+                            &:last-child{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        .content{
+             .button{
+                padding: 2vh 4vw;
+                width: 35%;
+            }
+        }
     }
     .newone{
+        padding-top: 2.5%;
         text-align: center;
+        p{
+            font-size: 1.2em;
+        }
         .content{
             margin: 5vh auto;
         }
@@ -23,21 +76,25 @@
         }
     }
     .services .icons [class^="icon-"]{
-        margin: 0;
+        margin: 2vh 0;
     }
     .heroquats{
         .content{
+            p{
+                margin: auto 10%;
+            }
             .quate{
-                font-size: 4em;
+                font-size: 3.5em;
             }
         }
     }
 
    .prices .offerts [class^="offert-"]{
        min-height: 55vh;
-       margin: 5vh 0 ;
+       margin: 2vh 0 ;
+       padding-bottom: 0;
         .topsec{
-            padding-bottom: 4%;
+            padding-bottom: 10%;
             height: 30%;
             font-size: 1.4em !important;
             .package{
@@ -68,8 +125,13 @@
    }
    .benefits{
     [class^="benefit-"]{
+        margin: 0 auto;
+        text-align: center;
         padding: 0;
-        min-height: 50vh;
+        min-height: 45vh;
+        p{
+            font-size: 1.3em;
+        }
     }
    }
    .joincomunity{
@@ -87,12 +149,15 @@
            padding: 5%;
            font-size: 1.2em;
            .button{
-               width: 25%;
+               width: 35%;
            }
        }
    }
    .downloadsec{
        .content{
+           p{
+               font-size: 18px;
+           }
            padding: 0 !important;
            .belt{
             margin-left: 0 !important;
