@@ -1,14 +1,36 @@
 header {
     height: 10vh;
+    min-height: 60px;
     background-color: black;
     display: flex;
     align-items: center;
     .specrow{
         flex-wrap: nowrap;
         align-items: center;
+        margin-right: 0;
         .logo {
-            display: flex;
-            flex: 5%;
+            display: inline-flex;
+            flex-basis: 15%;
+        }
+        .hamburger{
+            display: none;
+            width: 15vw;
+            height: 9vw;
+            float: right;
+            cursor: pointer;
+                &:hover span{
+                    box-shadow: 1px 1px 1px ;
+                    transform: scale(1.1);
+                }
+            span{
+                display: block;
+                border-top: 4px $maincolor solid;
+                border-bottom: 4px $maincolor solid;
+                box-shadow: 1px 1px 1px;
+                border-radius: 10px;
+                margin: 15% 0;
+                width: 80%;
+            }
         }
         nav {
             display: flex;
@@ -30,18 +52,19 @@ header {
                     a {
                         margin: 0 auto;
                         text-decoration: none;
-                        font-size: 16px;
+                        font-size: 0.6em;
                         font-weight: 600;
                         color: $greycolor;
                     }
-                &:hover{
-                    box-sizing: border-box;
-                    border-bottom: 1vh $maincolor solid;
-                    a{
-                        position: relative;
-                        top: 0.5vh;
+                    &:hover{
+                        box-sizing: border-box;
+                        border-bottom: 1vh $maincolor solid;
+                        cursor: pointer;
+                        a{
+                            position: relative;
+                            top: 0.5vh;
+                        }
                     }
-                }
                 }
             }
         }

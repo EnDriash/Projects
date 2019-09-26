@@ -5,11 +5,14 @@
         display: flex;
         align-items: flex-start;
         .offert{
-            padding: 0 2vw;
+            padding: 1vh 2vw;
             flex-direction: column;
             text-align: center;
                 img{
+                    align-items: center;
                     padding:  0 4.5vw;
+                    max-width: 120px;
+                    max-height: 120px;
                 }
                 p{
                     color: $silvercolor;

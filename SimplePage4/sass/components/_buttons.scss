@@ -8,6 +8,8 @@ button{
     border-style: none;
     background-color: $maincolor;
     width: 12.5vw;
+    min-width: 200px;
+    min-height: 50px;
     height: 6vh;
     
     &:hover{

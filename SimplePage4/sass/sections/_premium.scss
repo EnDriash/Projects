@@ -3,8 +3,14 @@
     flex-direction: column; 
     align-items: center;
     .currentbox{
+        .boximage{
+            img{
+                width: 100%;
+            }
+        }
         .desc{
             flex-direction: column;
+
             .feature{
                 flex-direction: column;
                 h2{

@@ -2,7 +2,10 @@ footer{
     background-color: black;
     color: $greycolor;
     padding: 5vh 0;
-
+    .specrow{
+        margin: 0 5%;
+        flex-wrap: nowrap;
+    }
     [class^="col-"]{
         padding: 2vh;
     }

@@ -5,18 +5,22 @@
     background-attachment: fixed;
     background-size: cover;
     height: 80vh;
+    min-height: 500px;
     width: 100%;
         .content{
+            width: 100%;
             height: 90%;
             display: flex;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             color: $greycolor;
             flex-direction: column;
-            p{
+            p{  
+                display: inline-block;
+                width: 95%;
+                text-align: center;
                 font-weight: 900;
                 font-size: 100px;
-                margin: 0;
                 span{
                     color: $maincolor;
                 }
