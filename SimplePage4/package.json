@@ -9,7 +9,7 @@
     "init:dirs": "mkdirp sass sass/components sass/pages sass/sections css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss sass/_variables.scss sass/_normalize.scss sass/_mixins.scss sass/_layout.scss js/script.js",
     "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
-    "build": "npm-run-all build:* test",
+    "build": "npm-run-all build:* ",
     "build:clean": "rimraf css/*.css ",
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "globstar autoprefixer-cli css/*.css",
